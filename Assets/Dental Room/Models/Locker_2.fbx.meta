@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: 646a9f99a11b8884cb339e74b0e7ced9
+timeCreated: 1581935455
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Locker_1
+    100002: Locker_1_box_1
+    100004: Locker_1_box_2
+    100006: Locker_1_box_3
+    100008: Locker_1_box_4
+    100010: Locker_1_box_5
+    100012: Locker_2
+    100014: //RootNode
+    100016: Locker_2_box_1
+    100018: Locker_2_Door
+    100020: Locker_3
+    100022: Locker_3_box_1
+    100024: Locker_3_box_2
+    100026: Locker_3_box_3
+    100028: Locker_3_box_4
+    100030: Locker_3_box_5
+    100032: Locker_4
+    100034: Locker_4_door_1
+    100036: Locker_4_door_2
+    100038: Locker_5
+    100040: Locker_5_door_1
+    100042: Locker_5_door_2
+    100044: Locker_Corner
+    100046: Locker_Corner_door
+    100048: Lockers_table
+    100050: Net
+    100052: Support_1
+    100054: Support_2
+    400000: Locker_1
+    400002: Locker_1_box_1
+    400004: Locker_1_box_2
+    400006: Locker_1_box_3
+    400008: Locker_1_box_4
+    400010: Locker_1_box_5
+    400012: //RootNode
+    400014: Locker_2
+    400016: Locker_2_box_1
+    400018: Locker_2_Door
+    400020: Locker_3
+    400022: Locker_3_box_1
+    400024: Locker_3_box_2
+    400026: Locker_3_box_3
+    400028: Locker_3_box_4
+    400030: Locker_3_box_5
+    400032: Locker_4
+    400034: Locker_4_door_1
+    400036: Locker_4_door_2
+    400038: Locker_5
+    400040: Locker_5_door_1
+    400042: Locker_5_door_2
+    400044: Locker_Corner
+    400046: Locker_Corner_door
+    400048: Lockers_table
+    400050: Net
+    400052: Support_1
+    400054: Support_2
+    2300000: Locker_1
+    2300002: Locker_1_box_1
+    2300004: Locker_1_box_2
+    2300006: Locker_1_box_3
+    2300008: Locker_1_box_4
+    2300010: Locker_1_box_5
+    2300012: Locker_2
+    2300014: Locker_2_box_1
+    2300016: Locker_2_Door
+    2300018: Locker_3
+    2300020: Locker_3_box_1
+    2300022: Locker_3_box_2
+    2300024: Locker_3_box_3
+    2300026: Locker_3_box_4
+    2300028: Locker_3_box_5
+    2300030: Locker_4
+    2300032: Locker_4_door_1
+    2300034: Locker_4_door_2
+    2300036: Locker_5
+    2300038: Locker_5_door_1
+    2300040: Locker_5_door_2
+    2300042: Locker_Corner
+    2300044: Locker_Corner_door
+    2300046: Lockers_table
+    2300048: Net
+    2300050: Support_1
+    2300052: Support_2
+    3300000: Locker_1
+    3300002: Locker_1_box_1
+    3300004: Locker_1_box_2
+    3300006: Locker_1_box_3
+    3300008: Locker_1_box_4
+    3300010: Locker_1_box_5
+    3300012: Locker_2
+    3300014: Locker_2_box_1
+    3300016: Locker_2_Door
+    3300018: Locker_3
+    3300020: Locker_3_box_1
+    3300022: Locker_3_box_2
+    3300024: Locker_3_box_3
+    3300026: Locker_3_box_4
+    3300028: Locker_3_box_5
+    3300030: Locker_4
+    3300032: Locker_4_door_1
+    3300034: Locker_4_door_2
+    3300036: Locker_5
+    3300038: Locker_5_door_1
+    3300040: Locker_5_door_2
+    3300042: Locker_Corner
+    3300044: Locker_Corner_door
+    3300046: Lockers_table
+    3300048: Net
+    3300050: Support_1
+    3300052: Support_2
+    4300000: Locker_5
+    4300002: Locker_5_door_1
+    4300004: Locker_5_door_2
+    4300006: Lockers_table
+    4300008: Locker_4
+    4300010: Locker_4_door_2
+    4300012: Locker_4_door_1
+    4300014: Locker_Corner
+    4300016: Locker_Corner_door
+    4300018: Net
+    4300020: Support_1
+    4300022: Support_2
+    4300024: Locker_3
+    4300026: Locker_3_box_1
+    4300028: Locker_3_box_5
+    4300030: Locker_3_box_4
+    4300032: Locker_3_box_3
+    4300034: Locker_3_box_2
+    4300036: Locker_1
+    4300038: Locker_1_box_5
+    4300040: Locker_1_box_4
+    4300042: Locker_1_box_3
+    4300044: Locker_1_box_2
+    4300046: Locker_1_box_1
+    4300048: Locker_2
+    4300050: Locker_2_box_1
+    4300052: Locker_2_Door
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
