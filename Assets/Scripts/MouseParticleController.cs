@@ -9,9 +9,14 @@ public class MouseParticleController : MonoBehaviour
 
     public Camera cam;
     public GameObject particles;
+    public GameObject laser;
     public float xOffset;
     public float yOffset;
 
+    private bool started = false;
+    private float startTime = 0;
+    public float timer = 0;
+    float holdDuration = 0;
     void Start()
     {
         particles.SetActive(false);
@@ -20,7 +25,10 @@ public class MouseParticleController : MonoBehaviour
 
     void Update()
     {
+        var ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitInfo;
         particles.SetActive(true);
+        laser.SetActive(true);
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = distanceFromCamera;
 
@@ -32,16 +40,55 @@ public class MouseParticleController : MonoBehaviour
         //position.y = position.y + 0.1f;
 
         particles.transform.position = position;
-        particles.transform.LookAt(cam.transform);
+        if (started)
+        {
+            holdDuration = Time.time - startTime;
+            //Debug.Log("Mouse holding: " + holdDuration + " seconds");
+            if (holdDuration > 2)
+            {
+                particles.GetComponent<ParticleSystemRenderer>().enabled = true;
+                holdDuration = 0;
+            }
+            else
+            {
+                particles.GetComponent<ParticleSystemRenderer>().enabled = false;
+            }
+        }
+        //particles.transform.LookAt(cam.transform);
+        //laser.transform.LookAt(mouseScreenToWorld);
         if (Input.GetMouseButtonDown(0))
         {
-            particles.GetComponent<ParticleSystemRenderer>().enabled = true;
-
+            if (!started)
+            {
+                startTime = Time.time;
+                started = true;
+                Debug.Log("Starting timer");
+            }
+            if (Physics.Raycast(ray, out hitInfo))
+            {
+                particles.transform.position = hitInfo.transform.position;
+                /*if (holdDuration > 2)
+                {
+                    particles.GetComponent<ParticleSystemRenderer>().enabled = true;
+                    //startTime = Time.time;
+                }*/
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {
             particles.GetComponent<ParticleSystemRenderer>().enabled = false;
+            started = false;
+            timer = 0;
         }
     }
+
+    void OnMouseDown()
+    {
+        startTime = Time.time;
+        timer = startTime;
+    }
+
+
+
 
 }

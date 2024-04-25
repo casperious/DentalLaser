@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Es.InkPainter.Sample
 {
 	public class MousePainter : MonoBehaviour
 	{
 		public Camera cam;
+		public float timer;
+		private bool started = false;
+		private float holdDuration;
+		private float startTime;
 		/// <summary>
 		/// Types of methods used to paint.
 		/// </summary>
@@ -28,8 +32,22 @@ namespace Es.InkPainter.Sample
 
 		private void Update()
 		{
+			if (started)
+			{
+				holdDuration = Time.time - startTime;
+				if (holdDuration > timer + 0.5f)
+				{
+					holdDuration = 0;
+				}
+			}
 			if (Input.GetMouseButton(0))
 			{
+				if (!started)
+				{
+					startTime = Time.time;
+					started = true;
+					Debug.Log("Starting timer");
+				}
 				var ray = cam.ScreenPointToRay(Input.mousePosition);
 				bool success = true;
 				RaycastHit hitInfo;
@@ -54,8 +72,12 @@ namespace Es.InkPainter.Sample
 						switch (useMethodType)
 						{
 							case UseMethodType.RaycastHitInfo:
-								success = erase ? paintObject.Erase(brush, hitInfo) : paintObject.Paint(brush, hitInfo);
-								//Debug.Log("Painting " + success);
+								if (holdDuration > timer)
+								{
+									success = erase ? paintObject.Erase(brush, hitInfo) : paintObject.Paint(brush, hitInfo);
+									//Debug.Log("Painting " + success);
+									holdDuration = 0;
+								}
 								break;
 
 							case UseMethodType.WorldPoint:
@@ -76,6 +98,12 @@ namespace Es.InkPainter.Sample
 							Debug.LogError("Failed to paint.");
 					}
 				}
+			}
+			if (Input.GetMouseButtonUp(0))
+			{
+				//particles.GetComponent<ParticleSystemRenderer>().enabled = false;
+				started = false;
+				holdDuration = 0;
 			}
 		}
 

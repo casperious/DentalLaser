@@ -4,5 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Dental Room VR.unity
+    guid: 407dbc1beeb0d7e4dbc062e966ec5d39
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cbc640fb3de324d4aa1024e85aebb63e, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 87df6da944a26fd4aa8b90b7e8b84875, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: c473459089f3f1948bd2ae46e82879e3, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ad25b2ce068688c4a8184f919ba70d25, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 8fccd545f9bd9fc498c01eaf06c9783d, type: 2}

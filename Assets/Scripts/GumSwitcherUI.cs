@@ -26,7 +26,7 @@ public class GumSwitcherUI : MonoBehaviour
     public void DropdownItemSelected(TMP_Dropdown dropdown)
     {
         int idx = dropdown.value;
-        Debug.Log(idx);
+        //Debug.Log(idx);
         for (int i = 0; i < jaws.Length; i++)
         {
             if (i != idx)
